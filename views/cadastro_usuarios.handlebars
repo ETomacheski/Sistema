@@ -1,0 +1,35 @@
+<form method="POST" action="/usuario/add"  > <!-- Formulário simples para fazer o cadastro primeiro acesso do site -->
+
+	<label for="nome">Nome:</label>
+	<input type="text" name="nome" id="nome" placeholder="Ex: Fulano de Tal" class="w3-input w3-border w3-margin-bottom">
+
+	<label for="email">Email:</label>
+	<input type="email" name="email" id="email" placeholder="Ex: fulano@gmail.com" class="w3-input w3-border w3-margin-bottom">
+
+	<label for="cpf">CPF:</label>
+	<input type="text" name="cpf" id="cpf" placeholder="Ex: 000.000.000.0" class="w3-input w3-border w3-margin-bottom"> 
+
+	<label for="end">Endereço</label>
+	<input type="text" name="endereco" id="end" placeholder="Ex: Rua tal Numero 0" class="w3-input w3-border w3-margin-bottom">
+
+	<label for="cel">Celular</label>
+	<input type="number" name="celular" id="cel" placeholder="Ex: 51994027515" class="w3-input w3-border w3-margin-bottom">
+
+	<label for="setor">Setor: </label>
+	<select name="setor" id="setor" class="w3-select w3-border w3-margin-bottom">
+
+		<option value="financeiro">Financeiro</option>
+		<option value="vendas">Vendas</option>
+		<option value="suporte">Suporte</option>
+		<option value="administrativo">Administrativo</option>
+
+
+	</select>
+
+	<label for="senha">Senha</label>
+	<input type="password" name="senha" id="senha"  class="w3-input w3-border w3-margin-bottom">
+
+	<div class="modal-footer d-flex justify-content-center">
+		<button type = "submit" class="btn btn-default">Cadastrar</button>
+	</div>
+</form>

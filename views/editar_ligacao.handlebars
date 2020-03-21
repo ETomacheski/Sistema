@@ -1,0 +1,94 @@
+<!-- Pagina para editar ligação-->
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {
+	font-family: "Roboto", sans-serif
+}
+body{
+	background-color: #009688;
+}
+</style>
+
+<div class="w3-light-red">
+	
+	    <!-- Right Column -->
+	    <div class="w3-twothird">
+	    
+			<div class="w3-container w3-card w3-white w3-margin-bottom">
+				<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Editar Ligação</h2>
+
+				<div class="w3-container">
+					<form method="POST" action="/usuario/editar_ligacao" >
+						<input type="hidden" name="id" value="{{id}}">
+						<label for="NE">Numero de entrada:</label>
+						<input type="Numero" name="numero_entrada" id="NE" value="{{ligacao.numero_entrada}}" class="w3-input w3-border w3-margin-bottom">
+
+						<label for="NS">Numero de Saida:</label>
+						<input type="Numero" name="numero_saida" id="NS" class="w3-input w3-border w3-margin-bottom" value="{{ligacao.numero_saida}}">
+						
+						<label for="OE">Operadora de Entrada:</label>
+						<select id="OE" name="operadora_entrada" class="w3-input w3-border w3-margin-bottom" value="{{ligacao.op_entrada}}">>
+							<option value="oi">
+								Oi
+							</option>
+							<option value="vivo">
+								Vivo
+							</option>
+							<option value="claro">
+								Claro
+							</option>
+							<option value="tim">
+								Tim
+							</option>
+						</select>
+
+						<label for="OS">Operadora de Saida:</label>
+						<select id="Os" name="operadora_saida" class="w3-input w3-border w3-margin-bottom" value="{{ligacao.op_saida}}">>
+							<option value="oi">
+								Oi = 1,2 R$ por minuto
+							</option>
+							<option value="vivo">
+								Vivo = 0,8 R$ por minuto
+							</option>
+							<option value="claro">
+								Claro = 1,00 R$ por minuto
+							</option>
+							<option value="tim">
+								Tim = 0,9 R$ por minuto
+							</option>
+
+						</select>
+
+						<label for="tempo">Tempo de duração da ligação:</label>
+						<input type="number" name="tempo" id="tempo" class="w3-input w3-border w3-margin-bottom" value="{{ligacao.tempo}}">
+
+						<div class="modal-footer d-flex justify-content-center">
+								<button type = "submit" class="btn btn-default">Editar</button>
+						</div>
+					</form>
+
+
+					<hr>
+					
+				</div>
+			</div>
+	      
+
+	    <!-- End Right Column -->
+	    </div>
+	    
+	  <!-- End Grid -->
+	  </div>
+	  
+	  <!-- End Page Container -->
+	</div>
+
+	<footer class="w3-container w3-teal w3-center w3-margin-top">
+	  
+	</footer>
+
+
+</div>
+
+
+

@@ -1,0 +1,69 @@
+<!-- Pagina para editar usúarios-->
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {
+	font-family: "Roboto", sans-serif
+}
+body{
+	background-color: #009688;
+}
+</style>
+
+<div class="w3-light-red">
+	
+	    <!-- Right Column -->
+	    <div class="w3-twothird">
+	    
+			<div class="w3-container w3-card w3-white w3-margin-bottom">
+				<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Editar Usuario</h2>
+
+				<div class="w3-container">
+					<form method="POST" action="/usuario/editar_usuario">
+					
+						<label for="nome">Nome:</label>
+						<input type="text" name="nome" id="nome" value="{{usuario.nome}}" class="w3-input w3-border w3-margin-bottom">
+
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email" value="{{usuario.email}}"  class="w3-input w3-border w3-margin-bottom">
+
+						<label for="cpf">CPF:</label>
+						<input type="text" name="cpf" id="cpf" value="{{usuario.cpf}}"  class="w3-input w3-border w3-margin-bottom"> 
+
+						<label for="end">Endereço</label>
+						<input type="text" name="endereco" id="end" value="{{usuario.endereco}}" class="w3-input w3-border w3-margin-bottom">
+
+						<label for="cel">Celular</label>
+						<input type="number" name="celular" id="cel" value="{{usuario.celular}}" class="w3-input w3-border w3-margin-bottom">
+
+						
+
+
+						<div class="modal-footer d-flex justify-content-center">
+							<button type = "submit" class="btn btn-default"  class="w3-btn w3-round-large cor">Editar</button>
+						</div>
+					</form>
+
+
+					<hr>
+					
+				</div>
+			</div>
+	      
+
+	    <!-- End Right Column -->
+	    </div>
+	    
+	  <!-- End Grid -->
+	  </div>
+	  
+	  <!-- End Page Container -->
+	</div>
+
+	<footer class="w3-container w3-teal w3-center w3-margin-top">
+	  
+	</footer>
+
+
+</div>
+
+
+

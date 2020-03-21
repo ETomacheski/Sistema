@@ -1,0 +1,81 @@
+<!--Pagina para editar cliente -->
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {
+	font-family: "Roboto", sans-serif
+}
+body{
+	background-color: #009688;
+}
+</style>
+
+<div class="w3-light-red">
+	
+	    <!-- Right Column -->
+	    <div class="w3-twothird">
+	    
+			<div class="w3-container w3-card w3-white w3-margin-bottom">
+				<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Editar Clientes</h2>
+
+				<div class="w3-container">
+					<form method="POST" action="/usuario/editar_cliente">
+						<input type="hidden" name="id" value="{{id}}">
+
+
+						<label for="nome">Nome:</label>
+						<input type="text" name="nome_cliente" id="nome" value="{{cliente.nome}}" class="w3-input w3-border w3-margin-bottom">
+
+						<label for="email">Email:</label>
+						<input type="email" name="email_cliente" id="email" value="{{cliente.email}}" class="w3-input w3-border w3-margin-bottom">
+
+						<label for="cpf">CPF:</label>
+						<input type="text" name="cpf_cliente" id="cpf" value="{{cliente.cpf}}" class="w3-input w3-border w3-margin-bottom"> 
+
+						<label for="end">Endereço</label>
+						<input type="text" name="endereco_cliente" id="end" value="{{cliente.endereco}}" class="w3-input w3-border w3-margin-bottom">
+
+						<label for="cel">Celular</label>
+						<input type="number" name="celular_cliente" id="cel" value="{{cliente.celular}}" class="w3-input w3-border w3-margin-bottom">
+
+						<label for="vendedor">Nome do vendedor</label>
+						<input type="text" name="vendedor" id="vendedor" value="{{cliente.vendedor}}" class="w3-input w3-border w3-margin-bottom">
+						<label for="setor">Setor: </label>
+						<select name="status_suporte" id="setor" value="{{cliente.status}}" class="w3-select w3-border w3-margin-bottom">
+
+							<option value="ativo">Ativo</option>
+							<option value="bloqueado">bloqueado</option>
+							<option value="clancelado">Cancelado</option>
+
+
+
+						</select>
+						<div class="modal-footer d-flex justify-content-center">
+							<button type = "submit" class="btn btn-default">Editar</button>
+						</div>
+					</form>
+
+
+					<hr>
+					
+				</div>
+			</div>
+	      
+
+	    <!-- End Right Column -->
+	    </div>
+	    
+	  <!-- End Grid -->
+	  </div>
+	  
+	  <!-- End Page Container -->
+	</div>
+
+	<footer class="w3-container w3-teal w3-center w3-margin-top">
+	  
+	</footer>
+
+
+</div>
+
+
+
