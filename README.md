@@ -36,7 +36,7 @@ Depois para criar o primeiro admin e ter acesso as demais funcionalidades é nec
 
   
 
-##💻ecnologia
+##💻Tecnologia
 
   
 
