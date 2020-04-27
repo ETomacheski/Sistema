@@ -6,7 +6,7 @@ Esse sistema foi criado como um teste de contratação para o estágio na TMW Te
 
   
 
-## Instalação 
+## ⁉️Instalação 
 
   
 
@@ -36,7 +36,7 @@ Depois para criar o primeiro admin e ter acesso as demais funcionalidades é nec
 
   
 
-## Tecnologias utilizadas 
+##💻ecnologia
 
   
 
@@ -45,3 +45,13 @@ Depois para criar o primeiro admin e ter acesso as demais funcionalidades é nec
 -MongoDb 
 
 -Handlebars  
+
+
+## Autor
+👤Eduardo Tomacheski
+
+
+Github: [@Eduardo Tomacheski](https://github.com/ETomacheski) 
+
+
+LinkedIn: [@Eduardo Tomacheski](https://www.linkedin.com/in/eduardo-tomacheski-a86b1617a/) 
